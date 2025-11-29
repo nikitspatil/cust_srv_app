@@ -1,8 +1,12 @@
 package com.bopa;
-@restcontroller
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class Welcome {
-    @getmapping("/welcome")
+    @GetMapping ("/welcome")
     public String getWelcomeMessage() {
-        return "Welcome to Bopa!";
+        return "Welcome to BOPA!";
     }
 }
